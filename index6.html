@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew Haven Café</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f5f1ea;
+        color: #3e2c23;
+        line-height: 1.6;
+      }
+
+      header {
+        background:
+          linear-gradient(rgba(62, 44, 35, 0.6), rgba(62, 44, 35, 0.6)),
+          url("https://images.unsplash.com/photo-1509042239860-f550ce710b93")
+            center/cover no-repeat;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 3.5rem;
+      }
+
+      header p {
+        margin: 20px 0;
+        font-size: 1.2rem;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #a67c52;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: 0.3s ease;
+      }
+
+      .btn:hover {
+        background: #8c6239;
+      }
+
+      section {
+        padding: 60px 10%;
+      }
+
+      .section-title {
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+      }
+
+      .about,
+      .menu,
+      .contact {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 40px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      .menu-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+
+      /* .menu-card {
+        background: #f9f6f1;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s ease;
+      } */
+
+      .menu-card img {
+        width: 100%;
+        height: 180px; /* Fixed height for all images */
+        object-fit: cover; /* Prevents stretching */
+        border-radius: 8px;
+        margin-bottom: 15px;
+        display: block;
+      }
+
+      .menu-card:hover {
+        transform: translateY(-5px);
+      }
+
+      footer {
+        background: #3e2c23;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+
+      .contact-info p {
+        margin: 10px 0;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1>Brew Haven Café</h1>
+        <p>Where Every Cup Feels Like Home</p>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+    </header>
+
+    <section>
+      <div class="about">
+        <h2 class="section-title">About Us</h2>
+        <p>
+          At Brew Haven Café, we believe coffee is more than a drink — it's an
+          experience. We serve ethically sourced beans, handcrafted beverages,
+          and freshly baked pastries in a warm and welcoming space designed for
+          comfort and connection.
+        </p>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-items">
+          <div class="menu-card">
+            <img src="image/Espresso.jpg" alt="Espresso" />
+            <h3>Espresso</h3>
+            <p>$3.00</p>
+          </div>
+          <div class="menu-card">
+            <img src="image/Cappuccino.webp" alt="Cappuccino" />
+            <h3>Cappuccino</h3>
+            <p>$4.50</p>
+          </div>
+          <div class="menu-card">
+            <img src="image/Latte.jpg" alt="Latte" />
+            <h3>Latte</h3>
+            <p>$4.75</p>
+          </div>
+          <div class="menu-card">
+            <img src="image/Butter Croissant.avif" alt="Butter Croissant" />
+            <h3>Butter Croissant</h3>
+            <p>$3.25</p>
+          </div>
+          <div class="menu-card">
+            <img src="image/Blueberry Muffin.jpg" alt="Blueberry Muffin" />
+            <h3>Blueberry Muffin</h3>
+            <p>$3.50</p>
+          </div>
+          <div class="menu-card">
+            <img src="image/Avocado Toas.webp" alt="Avocado Toast" />
+            <h3>Avocado Toast</h3>
+            <p>$6.50</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="contact-info">
+          <p><strong>Address:</strong> Coffee Street, Your City</p>
+          <p><strong>Phone:</strong></p>
+          <p><strong>Hours:</strong> Mon–Sun: 7:00 AM – 8:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Brew Haven Café | Follow us on social media</p>
+    </footer>
+  </body>
+</html>
